@@ -39,7 +39,7 @@ mkdir -p /directory/this/saved/split_wheat_by_chr
 
 while read chr; do
   samtools faidx /directory/this/saved/wheat.fasta "$chr" > /directory/this/saved/split_wheat_by_chr/"$chr".fasta
-done < wheat-chromosomes.txt
+done < chromosomes-wheat.txt
 ```
 
 ## 3. Index Reference with Minimap2
